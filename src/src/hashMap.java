@@ -19,10 +19,10 @@ public class hashMap {
             String map2Value=map2.get(key);
 
             if (map1Value.equals(map2Value)){
-                System.out.print("Value match for "+key);
+                System.out.print("Value matches exactly for "+key);
             }
             else {
-                System.out.print("Value do not match for "+key);
+                System.out.print("Value do not match exactly for "+key);
             }
         }
 
