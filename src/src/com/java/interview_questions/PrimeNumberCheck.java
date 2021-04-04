@@ -16,15 +16,20 @@ public class PrimeNumberCheck {
         int rem = 1, count = 0;
         new PrimeNumberCheck();
         for (int i = 1; i <= 10; i++) {
+            if (x == 1) {
+                System.out.println("Number is not prime");
+                break;
+            }
             rem = x % i;
             if (rem == 0) {
                 count++;
             }
         }
-        if (count <= 2) {
+        if (count <= 2 && x != 1) {
             System.out.println("Number is Prime");
         } else {
-            System.out.println("Number is not prime");
+            if (x != 1)
+                System.out.println("Number is not prime");
         }
     }
 }

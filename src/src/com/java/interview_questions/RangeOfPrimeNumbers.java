@@ -30,7 +30,7 @@ public class RangeOfPrimeNumbers {
                     count++;
                 }
             }
-            if (count == 2) {
+            if (count == 2 && j != 1) {
                 primeNum.add(j);
             }
             count = 0;
