@@ -12,6 +12,10 @@ public class RangeOfPrimeNumbers {
         System.out.println("Enter lower & upper range :");
         num1 = scanner.nextInt();
         num2 = scanner.nextInt();
+        if (num2 < num1) {
+            System.out.println("Upper Range cannot be lower than lower Range");
+            new RangeOfPrimeNumbers();
+        }
     }
 
     public static void main(String[] args) {
